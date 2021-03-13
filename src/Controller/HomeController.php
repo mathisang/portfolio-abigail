@@ -27,4 +27,14 @@ class HomeController extends AbstractController
             'active_page' => 'realisations',
         ]);
     }
+
+    /**
+     * @Route("/projet", name="projet")
+     */
+    public function projet(): Response
+    {
+        return $this->render('project/index.html.twig', [
+            'active_page' => 'realisations',
+        ]);
+    }
 }

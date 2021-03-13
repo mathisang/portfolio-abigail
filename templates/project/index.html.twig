@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+    <section class="extra-top detail-project noBg">
+
+        <div class="list-pictures">
+            <div class="picture">
+                <img src="{{ asset('images/projects/example.jpg') }}" alt="">
+            </div>
+            <div class="picture">
+                <img src="{{ asset('images/projects/example.jpg') }}" alt="">
+            </div>
+            <div class="picture">
+                <img src="{{ asset('images/projects/example.jpg') }}" alt="">
+            </div>
+        </div>
+
+        <div class="informations">
+            <div class="top-bar">
+                <a href=""><img src="{{ asset('images/icon/back.png') }}" alt="">Retourner aux projets</a>
+            </div>
+            <h2>Batifive</h2>
+            <span class="etiquette">Communication</span>
+            <div class="date">
+                <p class="title">DATE</p>
+                <span>7 mars 2021</span>
+            </div>
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare interdum pulvinar nibh facilisi gravida
+                viverra. Ullamcorper quam natoque volutpat urna adipiscing. Cras vivamus nunc, augue a. Sed eu, placerat
+                tristique aliquet netus feugiat neque lectus. Sollicitudin quis mattis commodo eros dolor, adipiscing
+                amet amet. Arcu, non, aenean quam sapien non sollicitudin at. Tortor urna, nulla a felis montes, nulla
+                non. Id sed proin sagittis faucibus. Cursus id egestas cursus massa, a.</p>
+        </div>
+
+    </section>
+
+{% endblock %}

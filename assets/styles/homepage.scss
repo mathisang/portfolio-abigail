@@ -1,4 +1,4 @@
-@import "app";
+//@import "app";
 
 body {
   .banniere {
@@ -93,17 +93,6 @@ body {
           font-weight: 600;
           font-size: 18px;
           margin-bottom: 2px;
-        }
-
-        span {
-          border: 2px solid $orange;
-          border-radius: 6px;
-          color: $orange;
-          padding: 3px 6px;
-          text-transform: uppercase;
-          font-size: 14px;
-          line-height: 14px;
-          font-weight: 600;
         }
       }
     }
