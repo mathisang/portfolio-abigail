@@ -3,38 +3,41 @@ $orange: #F05A2C;
 
 body {
     font-family: Raleway, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: $black;
     background: #F9F4EC;
     margin: 0;
 
+    // Default settings
     section {
         padding: 80px 0;
     }
-
+    section.noBg {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     h1,h2,h3,h4,h5,p {
         margin: 0;
     }
-
     a {
         text-decoration: none;
     }
-
     h2 {
         font-family: 'Merienda One', sans-serif;
         font-size: 32px;
         margin-bottom: .5rem;
     }
-
     h3 {
         color: $orange;
         font-size: 22px;
         font-weight: 600;
         margin-bottom: 30px;
     }
-
     .btn {
         padding: 8px 20px;
         border-radius: 6px;
@@ -42,18 +45,20 @@ body {
         font-weight: 700;
         text-transform: uppercase;
     }
-
     .btn-orange {
         background: $orange;
         color: white;
     }
+    // --end--
 
+    // Navigation
     header {
         width: 100%;
         height: 5.5rem;
         margin: .5rem 0;
 
         nav {
+            font-weight: 500;
             height: 100%;
             display: flex;
             align-items: center;
@@ -71,31 +76,5 @@ body {
             }
         }
     }
-
-    .banniere {
-        background: url('http://127.0.0.1:8000/images/banniere.jpg') center;
-        background-size: cover;
-        height: 320px;
-        width: 100%;
-    }
-
-    .about-box {
-        max-width: 800px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-
-        p {
-            text-align: center;
-            margin-bottom: 50px;
-
-            span {
-                background: $orange;
-                color: white;
-                font-weight: 600;
-            }
-        }
-    }
+    // --end--
 }

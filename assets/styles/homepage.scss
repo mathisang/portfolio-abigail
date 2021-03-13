@@ -1,0 +1,107 @@
+@import "app";
+
+body {
+  .banniere {
+    background: url('http://127.0.0.1:8000/images/banniere.jpg') center;
+    background-size: cover;
+    height: 320px;
+    width: 100%;
+  }
+
+  // About box
+  .about-box {
+    max-width: 800px;
+
+    p {
+      text-align: center;
+      margin-bottom: 50px;
+
+      span {
+        background: $orange;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+
+  // Soft skills
+  .soft-skills {
+    background: rgba(237, 224, 207, 0.3);
+    display: flex;
+    justify-content: center;
+
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 315px;
+      margin: 0 2rem;
+      text-align: center;
+
+      img {
+        width: 60px;
+        height: 60px;
+      }
+
+      h4 {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 1rem 0 1.5rem;
+      }
+    }
+  }
+
+  .last-projects {
+    h2 {
+      margin-bottom: 54px;
+    }
+
+    .list-projects {
+      display: flex;
+      margin-bottom: 50px;
+
+      article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 50px;
+
+        .visual {
+          width: 300px;
+          height: 218px;
+          border-radius: 20px;
+          overflow: hidden;
+          box-shadow: 0 0 22px rgba(0, 0, 0, 0.19);
+          margin-bottom: 20px;
+
+          img {
+            height: 100%;
+            width: 100%;
+            display: block;
+            object-fit: cover;
+          }
+        }
+
+        p {
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 18px;
+          margin-bottom: 2px;
+        }
+
+        span {
+          border: 2px solid $orange;
+          border-radius: 6px;
+          color: $orange;
+          padding: 3px 6px;
+          text-transform: uppercase;
+          font-size: 14px;
+          line-height: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
