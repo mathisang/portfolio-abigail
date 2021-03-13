@@ -1,0 +1,17 @@
+@import "app";
+
+.all-projects {
+  max-width: 1300px;
+
+  h2 {
+    margin-bottom: .5rem !important;
+  }
+
+  article {
+    margin-bottom: 1.75rem !important;
+  }
+
+  .list-projects {
+    justify-content: center;
+  }
+}

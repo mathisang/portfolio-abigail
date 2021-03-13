@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0a02adbe-f0b1-4c00-b55a-bd22471c90bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/homepage/_last_projects.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage/_last_projects.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +150,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615577553042</updated>
-      <workItem from="1615577554313" duration="7569000" />
+      <workItem from="1615577554313" duration="9002000" />
     </task>
     <servers />
   </component>

@@ -14,7 +14,17 @@ class HomeController extends AbstractController
     public function index(): Response
     {
         return $this->render('homepage/index.html.twig', [
-            'controller_name' => 'HomeController',
+            'active_page' => 'homepage',
+        ]);
+    }
+
+    /**
+     * @Route("/realisations", name="realisations")
+     */
+    public function realisations(): Response
+    {
+        return $this->render('realisations/index.html.twig', [
+            'active_page' => 'realisations',
         ]);
     }
 }
