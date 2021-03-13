@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+    <section class="extra-top">
+        {{ form_start(form) }}
+        <button class="btn btn-primary">{{ button|default('Enregistrer') }}</button>
+        {{ form_end(form) }}
+    </section>
+
+{% endblock %}

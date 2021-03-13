@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a02adbe-f0b1-4c00-b55a-bd22471c90bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/portfolioAbi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolioAbi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/homepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/homepage/_last_projects.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage/_last_projects.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/project/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/realisations/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/realisations/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -126,7 +126,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1pfcOY7CYOy35bjP2QCqv1BD8jX" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -150,11 +150,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615577553042</updated>
-      <workItem from="1615577554313" duration="12489000" />
+      <workItem from="1615577554313" duration="12742000" />
+      <workItem from="1615671396496" duration="1358000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="578" y="255" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1615672290474">
+      <screen x="0" y="25" width="1680" height="943" />
+    </state>
+    <state x="578" y="255" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1680.943@0.25.1680.943" timestamp="1615672290474" />
   </component>
 </project>
