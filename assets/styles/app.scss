@@ -26,6 +26,7 @@ body {
     }
     a {
         text-decoration: none;
+        color: $black;
     }
     h2 {
         font-family: 'Merienda One', sans-serif;
@@ -77,4 +78,51 @@ body {
         }
     }
     // --end--
+
+    footer {
+        background: rgba(237, 224, 207, 0.3);
+
+        svg {
+            transform: rotate(180deg);
+        }
+
+        .foot {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 0 3rem;
+
+            h3 {
+                font-size: 18px;
+                text-align: right;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+            }
+
+            a {
+                font-weight: 500;
+            }
+
+            .navigation {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .logo {
+                margin: 0 5rem;
+
+                img {
+                    height: 64px;
+                }
+            }
+
+            .right {
+                align-items: flex-start;
+            }
+
+            .left {
+                align-items: flex-end;
+            }
+        }
+    }
 }

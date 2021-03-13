@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Abigail Potee - {% block title %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
@@ -25,5 +26,27 @@
         </nav>
     </header>
         {% block body %}{% endblock %}
+    <footer>
+        <svg id="bigHalfCircle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 100" fill="#F9F4EC" preserveAspectRatio="none">
+            <path d="M0 100 C40 0 60 0 100 100 Z" />
+            <div class="foot">
+                <div class="navigation left">
+                    <h3>Navigation</h3>
+                    <a href="">À propos</a>
+                    <a href="">Réalisations</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="logo">
+                    <img src="{{ asset('images/logo.png') }}" alt="">
+                </div>
+                <div class="navigation right">
+                    <h3>Rejoignez-moi</h3>
+                    <a href="">Instagram</a>
+                    <a href="">Facebook</a>
+                    <a href="">Linkedin</a>
+                </div>
+            </div>
+        </svg>
+    </footer>
     </body>
 </html>

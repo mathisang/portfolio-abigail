@@ -29,6 +29,7 @@ body {
     background: rgba(237, 224, 207, 0.3);
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
     article {
       display: flex;
@@ -54,6 +55,8 @@ body {
   }
 
   .last-projects {
+    padding-bottom: 50px !important;
+
     h2 {
       margin-bottom: 54px;
     }
@@ -61,6 +64,7 @@ body {
     .list-projects {
       display: flex;
       margin-bottom: 50px;
+      flex-wrap: wrap;
 
       article {
         display: flex;
