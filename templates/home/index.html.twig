@@ -3,18 +3,15 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <div class="banniere"></div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/mathis/Documents/Projets personnels/portfolioAbi/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/mathis/Documents/Projets personnels/portfolioAbi/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <section class="about-box">
+        <h2>Chargée de communication</h2>
+        <h3>Créative et motivée</h3>
+        <p>Curieuse et déterminée, j’aime découvrir de nouvelles choses. Diplomée d’un DUT MMI et d’un Bachelor
+            Communication Marketing & Événementiel à l’INSEEC, je poursuis mes études dans la communication et <span>souhaite
+                apporter ma créativité et mon expérience à une entreprise</span> pour l’année 2021.</p>
+        <a href=""><div class="btn btn-orange">En savoir plus</div></a>
+    </section>
 {% endblock %}
