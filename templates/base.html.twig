@@ -19,7 +19,7 @@
     <header>
         <nav>
             <a href="{{ path('homepage') }}" {% if active_page == "homepage" %}class="active"{% endif %}>Accueil</a>
-            <a href="" {% if active_page == "about" %}class="active"{% endif %}>À propos</a>
+            <a href="{{ path('about') }}" {% if active_page == "about" %}class="active"{% endif %}>À propos</a>
             <img src="{{ asset('images/logo.png') }}" alt="">
             <a href="{{ path('realisations') }}" {% if active_page == "realisations" %}class="active"{% endif %}>Réalisations</a>
             <a href="{{ path('contact') }}" {% if active_page == "contact" %}class="active"{% endif %}>Contact</a>

@@ -43,6 +43,16 @@ class HomeController extends AbstractController
     }
 
     /**
+     * @Route("/a-propos", name="about")
+     */
+    public function about(): Response
+    {
+        return $this->render('about/index.html.twig', [
+            'active_page' => 'about',
+        ]);
+    }
+
+    /**
      * @Route("/contact", name="contact")
      */
     public function contact(Request $request, EntityManagerInterface $em): Response
@@ -57,11 +67,16 @@ class HomeController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $this->em->persist($contact);
-            $this->em->flush();
-            $this->addFlash('success', 'Demande de contact envoyée avec succès');
+            $captcha = $request->get('captcha');
+            $correctCaptcha = $request->get('correctCaptcha');
+            if ($captcha === $correctCaptcha) {
+                $this->em->persist($contact);
+                $this->em->flush();
+                $this->addFlash('success', 'Votre demande de contact à été envoyée avec succès');
 
-            return $this->redirectToRoute('homepage');
+                return $this->redirectToRoute('contact');
+            }
+            $this->addFlash('error', "La question de vérification est incorrect. Votre demande n'a pas abouti");
         }
 
         return $this->render('contact/index.html.twig', [

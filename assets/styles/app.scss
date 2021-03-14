@@ -1,5 +1,6 @@
 $black: #4E4E4E;
 $orange: #F05A2C;
+$red: #f02c2c;
 
 body {
     font-family: Raleway, sans-serif;
@@ -45,10 +46,18 @@ body {
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
+        cursor: pointer;
     }
     .btn-orange {
         background: $orange;
         color: white;
+    }
+    .btn-red {
+        background: $red;
+        color: white;
+    }
+    button {
+        border: none !important;
     }
     .etiquette {
         border: 2px solid $orange;
@@ -62,6 +71,49 @@ body {
     }
     .extra-top {
         padding-top: 40px !important;
+    }
+    .alert {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        background: rgba(0,0,0,.3);
+        top: 0;
+        left: 0;
+        z-index: 999;
+
+        .content-alert {
+            background: #FFFCF7;
+            box-shadow: 0 0 18px rgba(0, 0, 0, 0.05);
+            border-radius: 18px;
+            width: fit-content;
+            padding: 1.5rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            top: 16%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            p {
+                font-weight: 500;
+            }
+
+            .btn {
+                padding: 6px 12px !important;
+                margin-top: 1rem;
+            }
+        }
+    }
+    .alert-error {
+        p {
+            font-weight: 600 !important;
+        }
+    }
+    span.surligne {
+        background: $orange;
+        color: white;
+        font-weight: 600;
     }
     // --end--
 
