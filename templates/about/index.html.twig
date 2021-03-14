@@ -32,66 +32,66 @@
 
     <section class="soft-skills list-soft">
         <article>
-            <img src="{{ asset('images/icon/quill.png') }}" alt="">
+            <img src="{{ asset('images/icon/quill.svg') }}" alt="">
             <h4>Créativité</h4>
         </article>
         <article>
-            <img src="{{ asset('images/icon/layers.png') }}" alt="">
+            <img src="{{ asset('images/icon/layers.svg') }}" alt="">
             <h4>Polyvalence</h4>
         </article>
         <article>
-            <img src="{{ asset('images/icon/chat.png') }}" alt="">
+            <img src="{{ asset('images/icon/chat.svg') }}" alt="">
             <h4>Communication</h4>
         </article>
         <article>
-            <img src="{{ asset('images/icon/passion.png') }}" alt="">
+            <img src="{{ asset('images/icon/passion.svg') }}" alt="">
             <h4>Passion</h4>
         </article>
         <article>
-            <img src="{{ asset('images/icon/team.png') }}" alt="">
+            <img src="{{ asset('images/icon/team.svg') }}" alt="">
             <h4>Esprit d'équipe</h4>
         </article>
     </section>
 
     <section class="soft-skills list-hard">
         <article>
-            <img src="{{ asset('images/icon/photoshop.png') }}" alt="">
+            <img src="{{ asset('images/icon/photoshop.svg') }}" alt="">
             <div class="progress" id="photoshopLine"></div>
         </article>
         <article>
-            <img src="{{ asset('images/icon/illustrator.png') }}" alt="">
+            <img src="{{ asset('images/icon/illustrator.svg') }}" alt="">
             <div class="progress" id="illustratorLine"></div>
         </article>
         <article>
-            <img src="{{ asset('images/icon/indesign.png') }}" alt="">
+            <img src="{{ asset('images/icon/indesign.svg') }}" alt="">
             <div class="progress" id="indesignLine"></div>
         </article>
         <article>
-            <img src="{{ asset('images/icon/premiere.png') }}" alt="">
+            <img src="{{ asset('images/icon/premiere.svg') }}" alt="">
             <div class="progress" id="premiereLine"></div>
         </article>
         <article>
-            <img src="{{ asset('images/icon/powerpoint.png') }}" alt="">
+            <img src="{{ asset('images/icon/powerpoint.svg') }}" alt="">
             <div class="progress" id="powerpointLine"></div>
         </article>
         <article>
-            <img src="{{ asset('images/icon/social.png') }}" alt="">
+            <img src="{{ asset('images/icon/social.svg') }}" alt="">
             <div class="progress" id="socialLine"></div>
         </article>
     </section>
     <script>
         window.onload = function onLoad() {
 
-            animateLine('photoshop', .85);
-            animateLine('illustrator', .94);
-            animateLine('indesign', .78);
-            animateLine('premiere', .65);
-            animateLine('powerpoint', .97);
-            animateLine('social', .9);
+            animateLine('photoshop', .85, '#31A8FF');
+            animateLine('illustrator', .94, '#FF9A00');
+            animateLine('indesign', .78, '#FF3366');
+            animateLine('premiere', .65, '#9999FF');
+            animateLine('powerpoint', .97, '#D24726');
+            animateLine('social', .9, '#46C725');
 
-            function animateLine(selector, level) {
+            function animateLine(selector, level, color) {
                 var line = new ProgressBar.Line('#'+selector+'Line', {
-                    color: '#F05A2C',
+                    color: color,
                     duration: 3000,
                     easing: 'easeInOut'
                 });
