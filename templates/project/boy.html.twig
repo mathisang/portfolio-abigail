@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+    <section class="detail-project noBg">
+        <div class="bloc-section">
+            <div class="informations">
+                <div class="top-bar">
+                    <a href="{{ path('realisations') }}"><img src="{{ asset('images/icon/back.png') }}" alt="">Retourner
+                        aux
+                        projets</a>
+                </div>
+                <h2>Be Only You</h2>
+                <span class="etiquette">Projet 360</span>
+                <div class="date">
+                    <p class="title">DATE</p>
+                    <span>Décembre 2020</span>
+                </div>
+                <div class="content">
+                    <p>En étroite collaboration avec mon groupe de travail, nous avons réalisé dans le cadre d'un projet
+                        d'étude, une campagne nommée Be Only You pour Chanel. Dans le cadre de ce projet, nous avons pu
+                        dans un premier temps analyser la marque ainsi que son positionnement, puis lui proposer une
+                        campagne en adéquation avec la gamme BOY qu'elle a lancé. Nous avons alors choisi des égéries,
+                        établis une cible, des objectifs et des KPI's pour enfin définir un concept ainsi qu'un planning
+                        éditorial.</p>
+                    <div class="list-outils">
+                        <div>
+                            <p><span class="surligne">Outil utilisé :</span></p>
+                            <ul>
+                                <li>Canva</li>
+                                <li>Adobe Photoshop</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><span class="surligne">Compétences exploitées :</span></p>
+                            <ul>
+                                <li>Gestion d'un outil de PAO</li>
+                                <li>Audit des réseaux sociaux</li>
+                                <li>Analyse de marque et de positionnement</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><span class="surligne">Notions acquises:</span></p>
+                            <ul>
+                                <li>Reflexion</li>
+                                <li>Recherche</li>
+                                <li>Travail en groupe</li>
+                                <li>Meilleure maîtrise des logiciels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-pictures">
+                <div class="picture">
+                    <img src="{{ asset('images/projects/boy/boy1.jpg') }}" alt="">
+                </div>
+                <div class="picture">
+                    <img src="{{ asset('images/projects/boy/boy2.jpg') }}" alt="">
+                </div>
+                <div class="picture">
+                    <img src="{{ asset('images/projects/boy/boy3.jpg') }}" alt="">
+                </div>
+                <div class="picture">
+                    <img src="{{ asset('images/projects/boy/boy4.jpg') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

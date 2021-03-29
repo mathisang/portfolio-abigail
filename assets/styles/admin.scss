@@ -1,0 +1,139 @@
+body {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  background: #F0F0F0;
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  color: #2e3136;
+
+  header {
+    background: white;
+    height: 3.5rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 999;
+
+    a {
+      color: #2e3136;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:last-child {
+      margin-right: 2rem;
+    }
+  }
+
+  aside {
+    background: #2e3136;
+    height: calc(100vh - 3.5rem);
+    width: 14rem;
+    position: fixed;
+    top: 3.5rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    overflow: hidden;
+
+    a {
+      text-decoration: none;
+      color: #c6d1e7;
+
+      div {
+        height: 3rem;
+        width: 100%;
+        padding-left: 2rem;
+        display: flex;
+        align-items: center;
+      }
+
+      div.active {
+        background: #3d424b;
+      }
+    }
+
+    a:first-child {
+      margin-top: 1rem;
+    };
+  }
+
+  main {
+    width: calc(100vw - 14rem);
+    height: calc(100vh - 3.5rem);
+    margin: 6.5rem auto auto 18.75rem;
+
+    h2 {
+      color: #2e3136;
+    }
+
+    .hr {
+      height: 1px;
+      width: 400px;
+      background: rgba(46, 49, 54, 0.2);
+      position: relative;
+      top: -10px;
+      margin-bottom: 1rem;
+    }
+
+    .admin-form {
+      background: #fbfbfb;
+      border-radius: 10px;
+      width: 800px;
+      height: fit-content;
+      padding: 1.5rem;
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        .tox-tinymce {
+          border-radius: 3px;
+          margin-bottom: 1rem;
+          font-size: 16px;
+          color: #2e3136;
+        }
+
+        .input-box {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .btn-submit {
+          height: 2.25rem;
+          background: #2e3136;
+          border-radius: 3px;
+          color: white;
+          border: none;
+          width: 160px;
+          font-weight: 600;
+          margin: 0 auto;
+        }
+
+        label {
+          margin-bottom: .5rem;
+        }
+
+        input, select {
+          height: 2.25rem;
+          border: 1px solid #ececec;
+          padding-left: .75rem;
+          border-radius: 3px;
+          margin-bottom: 1rem;
+        }
+
+        select {
+          margin: 0 10px 1rem 0;
+          padding: 0 .5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Abigail Potee - {% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('admin') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('admin') }}
+    {% endblock %}
+    <script src="https://cdn.tiny.cloud/1/sq97eg3yp5onv0sou3l6ghjjfns9liyqeqiv8ozjegzc6eu9/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+{#    <script>#}
+{#        tinymce.init({#}
+{#            selector: '#mycontent',#}
+{#            height: 300#}
+{#        });#}
+{#    </script>#}
+</head>
+<body>
+
+<header>
+    <a href="">Déconnexion</a>
+    <a href="">Retour au site</a>
+</header>
+
+<aside>
+    <a href=""><div {% if active_page == "home_admin" %}class="active"{% endif %}>Accueil</div></a>
+    <a href=""><div {% if active_page == "list_project" %}class="active"{% endif %}>Liste des projets</div></a>
+    <a href=""><div {% if active_page == "add_project" %}class="active"{% endif %}>Ajouter un projet</div></a>
+    <a href=""><div {% if active_page == "edit_project" %}class="active"{% endif %}>Modifier un projet</div></a>
+    <a href=""><div {% if active_page == "contact" %}class="active"{% endif %}>Demande de contact</div></a>
+</aside>
+
+<main>
+    {% block body %}{% endblock %}
+</main>
+
+</body>
+</html>

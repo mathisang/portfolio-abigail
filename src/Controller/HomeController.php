@@ -3,7 +3,9 @@
 namespace App\Controller;
 
 use App\Entity\Contact;
+use App\Entity\Project;
 use App\Form\ContactType;
+use App\Form\ProjectType;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -12,6 +14,16 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class HomeController extends AbstractController
 {
+    /**
+     * @var EntityManagerInterface
+     */
+    private $em;
+
+    public function __construct(EntityManagerInterface $em)
+    {
+        $this->em = $em;
+    }
+
     /**
      * @Route("/", name="homepage")
      */
@@ -33,11 +45,81 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @Route("/projet", name="projet")
+     * @Route("/affiche-jpo-2020", name="affiche_jpo_2020")
      */
-    public function projet(): Response
+    public function affiche_jpo_2020(): Response
     {
-        return $this->render('project/index.html.twig', [
+        return $this->render('project/affiche_jpo_2020.html.twig', [
+            'active_page' => 'realisations',
+        ]);
+    }
+
+    /**
+     * @Route("/terres-du-son", name="terres_du_son")
+     */
+    public function terres_du_son(): Response
+    {
+        return $this->render('project/terre_du_son.html.twig', [
+            'active_page' => 'realisations',
+        ]);
+    }
+
+    /**
+     * @Route("/batifive", name="batifive")
+     */
+    public function batifive(): Response
+    {
+        return $this->render('project/batifive.html.twig', [
+            'active_page' => 'realisations',
+        ]);
+    }
+
+    /**
+     * @Route("/despecup", name="despecup")
+     */
+    public function projet2(): Response
+    {
+        return $this->render('project/despecup.html.twig', [
+            'active_page' => 'realisations',
+        ]);
+    }
+
+    /**
+     * @Route("/boy", name="boy")
+     */
+    public function boy(): Response
+    {
+        return $this->render('project/boy.html.twig', [
+            'active_page' => 'realisations',
+        ]);
+    }
+
+    /**
+     * @Route("/aesop", name="aesop")
+     */
+    public function aesop(): Response
+    {
+        return $this->render('project/aesop.html.twig', [
+            'active_page' => 'realisations',
+        ]);
+    }
+
+    /**
+     * @Route("/couverture-magazine", name="couverture_magazine")
+     */
+    public function projet5(): Response
+    {
+        return $this->render('project/couverture_magazine.html.twig', [
+            'active_page' => 'realisations',
+        ]);
+    }
+
+    /**
+     * @Route("/renault", name="renault")
+     */
+    public function projet6(): Response
+    {
+        return $this->render('project/renault.html.twig', [
             'active_page' => 'realisations',
         ]);
     }
@@ -57,8 +139,6 @@ class HomeController extends AbstractController
      */
     public function contact(Request $request, EntityManagerInterface $em): Response
     {
-        $this->em = $em;
-
         // Configurer un envoi d'email en plus de l'enregistrement en BDD
 
         $contact = new Contact();
@@ -84,4 +164,49 @@ class HomeController extends AbstractController
             'form' => $form->createView()
         ]);
     }
+
+//    /**
+//     * @Route("/admin/projet/add", name="add_project")
+//     */
+//    public function project_add(Request $request)
+//    {
+//        $project = new Project();
+//
+//        $form = $this->createForm(ProjectType::class, $project);
+//        $form->handleRequest($request);
+//
+//        if ($form->isSubmitted() && $form->isValid()) {
+//            $this->em->persist($project);
+//            $this->em->flush();
+//            $this->addFlash('success', 'Projet ajouté avec succès');
+//
+//            return $this->redirectToRoute('add_project');
+//        }
+//
+//        return $this->render('admin/project/add.html.twig', [
+//            'active_page' => 'add_project',
+//            'form' => $form->createView()
+//        ]);
+//    }
+//
+//    /**
+//     * @Route("/admin/projet/edit/{id}", name="edit_project")
+//     */
+//    public function project_edit(Request $request, EntityManagerInterface $em, $id, Project $project): Response
+//    {
+//        $form = $this->createForm(ProjectType::class, $project);
+//        $form->handleRequest($request);
+//
+//        if ($form->isSubmitted() && $form->isValid()) {
+//            $this->em->flush();
+//            $this->addFlash('success', 'Projet ajouté avec succès');
+//
+//            return $this->redirectToRoute('admin');
+//        }
+//
+//        return $this->render('admin/project/edit.html.twig', [
+//            'active_page' => 'edit_project',
+//            'form' => $form->createView()
+//        ]);
+//    }
 }

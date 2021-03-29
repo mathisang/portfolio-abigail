@@ -1,0 +1,154 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+    <section class="detail-project noBg">
+
+        <div class="bloc-section">
+            <div class="informations">
+                <div class="top-bar">
+                    <a href="{{ path('realisations') }}"><img src="{{ asset('images/icon/back.png') }}" alt="">Retourner
+                        aux
+                        projets</a>
+                </div>
+                <h2>Terres Du Son 2020</h2>
+                <span class="etiquette">Projet 360</span>
+                <div class="date">
+                    <p class="title">DATE</p>
+                    <span>Mars 2020</span>
+                </div>
+                <div class="content">
+                    <p>J'ai réalisé un projet complet dans le cadre du festival Terres du Son 2020. Nous avons du
+                        réalisé des maquettes pour le site web, une affiche, un programme, un moodboard ainsi qu'une
+                        charte graphique.
+                        En amont, nous avons effectué divers benchmarks et analyses de l'existants ainsi qu'un audit de
+                        leurs réseaux sociaux.</p>
+                    <div class="list-outils">
+                        <div>
+                            <p><span class="surligne">Outil utilisé :</span></p>
+                            <ul>
+                                <li>Adobe Illustrator</li>
+                                <li>Adobe Photoshop</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><span class="surligne">Compétences exploitées :</span></p>
+                            <ul>
+                                <li>Gestion d'outils de PAO</li>
+                                <li>Création de maquettes web</li>
+                                <li>Benchmark</li>
+                                <li>Recherches typographiques</li>
+                                <li>Gestion de projet</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><span class="surligne">Notions acquises:</span></p>
+                            <ul>
+                                <li>Réflexion</li>
+                                <li>Recherche</li>
+                                <li>Travail en groupe</li>
+                                <li>Meilleure maîtrise des logiciels</li>
+                                <li>Meilleure maîtrise de la gestion de projet</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloc-section">
+
+            <div class="informations">
+                <h3>Maquettes web</h3>
+                <div class="content">
+                    <p>Réalisation de 3 maquettes pour les pages : Accueil, Billetterie et Programmation en version mobile et desktop.</p>
+                </div>
+            </div>
+
+            <div class="list-pictures">
+                <div class="picture">
+                    <img src="{{ asset('images/projects/terresduson/maquette_accueil.jpg') }}" alt="">
+                </div>
+                <div class="picture">
+                    <img src="{{ asset('images/projects/terresduson/maquette_programmation.png') }}" alt="">
+                </div>
+                <div class="picture">
+                    <img src="{{ asset('images/projects/terresduson/maquette_billeterie.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+
+         <div class="bloc-section">
+
+            <div class="informations">
+                <h3>Programme interactif</h3>
+                <div class="content">
+                    <p>Réalisation d'un programme sous format PDF interactif</p>
+                </div>
+            </div>
+
+            <div class="list-pictures">
+                <div class="picture">
+                    <img src="{{ asset('images/projects/terresduson/preprogramme.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+
+         <div class="bloc-section">
+
+            <div class="informations">
+                <h3>Charte graphique</h3>
+                <div class="content">
+                    <p>Réalisation d'une charte graphique pour le festival</p>
+                </div>
+            </div>
+
+            <div class="list-pictures">
+                <div class="picture">
+                    <img src="{{ asset('images/projects/terresduson/charte1.png') }}" alt="">
+                </div>
+                <div class="picture">
+                    <img src="{{ asset('images/projects/terresduson/charte2.png') }}" alt="">
+                </div>
+                <div class="picture big-picture">
+                    <img src="{{ asset('images/projects/terresduson/charte3.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+
+         <div class="bloc-section">
+        <div class="informations">
+                <h3>Moodboard</h3>
+                <div class="content">
+                    <p>Réalisation d'un moodboard</p>
+                </div>
+            </div>
+
+            <div class="list-pictures">
+                <div class="picture">
+                    <img src="{{ asset('images/projects/terresduson/moodboard.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+
+         <div class="bloc-section">
+        <div class="informations">
+                <h3>Affiche</h3>
+                <div class="content">
+                    <p>Réalisation d'une affiche</p>
+                </div>
+            </div>
+
+            <div class="list-pictures">
+                <div class="picture big-picture">
+                    <img src="{{ asset('images/projects/terresduson/affiche_tds.jpg') }}" alt="">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+{% endblock %}

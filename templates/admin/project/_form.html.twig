@@ -1,0 +1,25 @@
+<div class="admin-form">
+    {{ form_start(form) }}
+    <div class="input-box">
+        <label for="contact_nom">Titre : <span>*</span></label>
+        {{ form_widget(form.title) }}
+    </div>
+    <div class="input-box">
+        <label for="contact_nom">Theme : <span>*</span></label>
+        {{ form_widget(form.theme) }}
+    </div>
+    <div class="input-box">
+        <label for="contact_nom">Date : <span>*</span></label>
+        {{ form_widget(form.date_project) }}
+    </div>
+    <div class="input-box">
+        <label for="contact_nom">Contenu : <span>*</span></label>
+        {{ form_widget(form.content, { 'id': 'mycontent'}) }}
+    </div>
+    <div class="input-box">
+        <label for="contact_nom">Contenu : <span>*</span></label>
+        {{ form_widget(form.filePictures) }}
+    </div>
+    <button class="btn btn-submit">{{ button|default('Envoyer') }}</button>
+    {{ form_end(form) }}
+</div>
