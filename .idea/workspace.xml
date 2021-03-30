@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a02adbe-f0b1-4c00-b55a-bd22471c90bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/portfolioAbi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/portfolioAbi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/realisations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/realisations.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/projects/affiche_jpo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/projects/affiche_tds.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/projects/despecup.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/projects/example.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/homepage/_last_projects.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/homepage/_last_projects.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/project/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/affiche_jpo_2020.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/realisations/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/realisations/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,6 +181,8 @@
       <workItem from="1616941898238" duration="5702000" />
       <workItem from="1616953573046" duration="702000" />
       <workItem from="1617038990869" duration="7512000" />
+      <workItem from="1617130768966" duration="2086000" />
+      <workItem from="1617135737878" duration="681000" />
     </task>
     <servers />
   </component>
@@ -206,14 +190,26 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="844" y="146" key="#SSH_Configurations" timestamp="1617131214288">
+      <screen x="0" y="25" width="1680" height="943" />
+    </state>
+    <state x="844" y="146" key="#SSH_Configurations/0.25.1680.943@0.25.1680.943" timestamp="1617131214288" />
     <state x="578" y="255" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1616943980628">
       <screen x="0" y="25" width="1680" height="943" />
     </state>
     <state x="578" y="255" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1680.943@0.25.1680.943" timestamp="1616943980628" />
-    <state x="540" y="253" width="838" height="538" key="find.popup" timestamp="1617047700983">
+    <state x="100" y="125" width="1480" height="743" key="DiffContextDialog" timestamp="1617136584182">
       <screen x="0" y="25" width="1680" height="943" />
     </state>
-    <state x="540" y="253" width="838" height="538" key="find.popup/0.25.1680.943@0.25.1680.943" timestamp="1617047700983" />
+    <state x="100" y="125" width="1480" height="743" key="DiffContextDialog/0.25.1680.943@0.25.1680.943" timestamp="1617136584182" />
+    <state x="540" y="253" width="838" height="538" key="find.popup" timestamp="1617132834078">
+      <screen x="0" y="25" width="1680" height="943" />
+    </state>
+    <state x="540" y="253" width="838" height="538" key="find.popup/0.25.1680.943@0.25.1680.943" timestamp="1617132834078" />
+    <state x="1167" y="231" key="ftp.server.browser" timestamp="1617131294897">
+      <screen x="0" y="25" width="1680" height="943" />
+    </state>
+    <state x="1167" y="231" key="ftp.server.browser/0.25.1680.943@0.25.1680.943" timestamp="1617131294897" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
