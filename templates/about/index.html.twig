@@ -53,7 +53,7 @@
         </article>
     </section>
 
-    <section class="soft-skills list-hard">
+    <section class="soft-skills list-hard" id="listskills">
         <article>
             <img src="{{ asset('images/icon/photoshop.svg') }}" alt="">
             <div class="progress" id="photoshopLine"></div>
@@ -80,24 +80,33 @@
         </article>
     </section>
     <script>
-        window.onload = function onLoad() {
+        function isScrolledIntoView(elem) {
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+            var elemTop = $(elem).offset().top;
+            var elemBottom = elemTop + $(elem).height();
+            return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+        }
 
-            animateLine('photoshop', .85, '#31A8FF');
-            animateLine('illustrator', .94, '#FF9A00');
-            animateLine('indesign', .78, '#FF3366');
-            animateLine('premiere', .65, '#9999FF');
-            animateLine('powerpoint', .97, '#D24726');
-            animateLine('social', .9, '#46C725');
-
-            function animateLine(selector, level, color) {
-                var line = new ProgressBar.Line('#'+selector+'Line', {
-                    color: color,
-                    duration: 3000,
-                    easing: 'easeInOut'
-                });
-
-                line.animate(level);
+        $(window).scroll(function () {
+            if (isScrolledIntoView($('#listskills'))) {
+                animateLine('photoshop', .85, '#31A8FF');
+                animateLine('illustrator', .94, '#FF9A00');
+                animateLine('indesign', .78, '#FF3366');
+                animateLine('premiere', .65, '#9999FF');
+                animateLine('powerpoint', .97, '#D24726');
+                animateLine('social', .9, '#46C725');
             }
-        };
+        });
+
+        function animateLine(selector, level, color) {
+            var line = new ProgressBar.Line('#' + selector + 'Line', {
+                color: color,
+                duration: 3000,
+                easing: 'easeInOut'
+            });
+
+            line.animate(level);
+        }
     </script>
 {% endblock %}

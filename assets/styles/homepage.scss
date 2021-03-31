@@ -28,7 +28,7 @@ body {
       flex-direction: column;
       align-items: center;
       max-width: 315px;
-      margin: 0 2rem;
+      margin: 1rem 2rem;
       text-align: center;
 
       img {
@@ -55,14 +55,16 @@ body {
 
     .list-projects {
       display: flex;
-      margin-bottom: 50px;
+      max-width: 1000px;
+      justify-content: space-around;
       flex-wrap: wrap;
+      margin-bottom: 1.5rem;
 
       article {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 50px;
+        margin: .5rem 15px;
 
         a.link-image {
           display: block;
@@ -91,6 +93,26 @@ body {
           font-weight: 600;
           font-size: 18px;
           margin-bottom: 2px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    .about-box {
+      padding: 80px 1rem;
+    }
+    .last-projects {
+      .btn-orange {
+        margin-top: 1rem;
+      }
+      .list-projects {
+        justify-content: center;
+
+        article {
+          margin: 1rem 50px;
         }
       }
     }

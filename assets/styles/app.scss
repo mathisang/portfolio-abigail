@@ -197,4 +197,23 @@ body {
             }
         }
     }
+
+    @media screen and (max-width: 600px) {
+        footer {
+            .foot {
+                padding: .5rem 0 1.5rem;
+                flex-direction: column;
+
+                .navigation {
+                    align-items: center !important;
+                    margin: .5rem 0;
+                }
+            }
+            .logo {
+                display: none;
+            }
+
+        }
+    }
 }
+
