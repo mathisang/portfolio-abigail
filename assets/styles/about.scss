@@ -6,6 +6,7 @@ body {
     .portrait {
       height: 150px;
       width: 150px;
+      //background: url("http://abigailpotee.fr/images/portrait.jpeg");
       background: url("http://abigailpotee.fr/images/portrait.jpeg");
       background-size: cover;
       background-position: center;
@@ -28,7 +29,7 @@ body {
     }
 
     article {
-      margin: 0 4rem;
+      margin: .75rem 4rem;
     }
   }
 
@@ -43,7 +44,26 @@ body {
 
     article {
       max-width: 150px !important;
-      margin: 0 2.5rem;
+      margin: .75rem 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    .about {
+      padding: 40px 1rem 80px;
+    }
+    .list-soft {
+      article {
+        margin: 1.25rem 4rem;
+      }
+    }
+    .list-hard  {
+      article {
+        max-width: 150px !important;
+        margin: 1.25rem 2.5rem;
+      }
     }
   }
 }

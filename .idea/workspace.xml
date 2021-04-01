@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0a02adbe-f0b1-4c00-b55a-bd22471c90bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/about.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/contact.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/homepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/realisations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/realisations.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,6 +151,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/projects" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
@@ -186,7 +193,8 @@
       <workItem from="1616953573046" duration="702000" />
       <workItem from="1617038990869" duration="7512000" />
       <workItem from="1617130768966" duration="2086000" />
-      <workItem from="1617135737878" duration="5828000" />
+      <workItem from="1617135737878" duration="6742000" />
+      <workItem from="1617306190708" duration="1739000" />
     </task>
     <servers />
   </component>

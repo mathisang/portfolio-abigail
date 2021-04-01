@@ -88,3 +88,14 @@ body {
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  body {
+    .contact-box {
+      .contact-form {
+        width: 96%;
+        padding: 2rem;
+      }
+    }
+  }
+}

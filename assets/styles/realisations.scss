@@ -130,3 +130,34 @@
     }
   }
 }
+
+@media screen and (max-width: 1000px) {
+  body {
+    .detail-project {
+      max-width: 92%;
+      padding: 0 1rem;
+
+      .informations {
+        .content {
+          .list-outils {
+            flex-direction: column;
+
+            div {
+              width: 100%;
+              margin: .5rem 0;
+            }
+          }
+        }
+      }
+
+      .list-pictures {
+        flex-direction: column;
+
+        .picture {
+          width: 100%;
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+}
