@@ -123,6 +123,9 @@ body {
         height: 5.5rem;
         margin: .5rem 0;
 
+        .hamburger {
+            display: none;
+        }
         nav {
             font-weight: 500;
             height: 100%;
@@ -198,6 +201,72 @@ body {
         }
     }
 
+    #open-mobile {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 0%;
+        opacity: 0;
+        width: 100%;
+        background: #F9F4EC;
+        z-index: 9800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+        transition: 0.5s;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a {
+                margin: 1rem 0;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+
+        #close {
+            position: absolute;
+            top: 28px;
+            left: 40px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+
+    #open-mobile.opened {
+        animation: openMobile .5s ease forwards;
+    }
+
+    #open-mobile.closed {
+        animation: closeMobile .5s ease forwards;
+    }
+
+    @keyframes openMobile {
+        from {
+            opacity: 0;
+            height: 0%;
+        }
+        to {
+            opacity: 1;
+            height: 100%;
+        }
+    }
+
+    @keyframes closeMobile {
+        from {
+            opacity: 1;
+            height: 100%;
+        }
+        to {
+            opacity: 0;
+            height: 0%;
+        }
+    }
+
     @media screen and (max-width: 600px) {
         footer {
             .foot {
@@ -213,6 +282,26 @@ body {
                 display: none;
             }
 
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        header {
+            height: 4rem;
+            display: flex;
+            align-items: center;
+
+            nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+                position: relative;
+                left: 40px;
+                font-size: 18px;
+                font-weight: 600;
+            }
         }
     }
 }

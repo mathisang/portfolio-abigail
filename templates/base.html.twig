@@ -17,7 +17,19 @@
         {% endblock %}
     </head>
     <body>
+    <div id="open-mobile">
+        <div id="close" onclick="$('#open-mobile').addClass('closed');setTimeout(function(){ $('#open-mobile').removeClass('opened');$('#open-mobile').removeClass('closed'); }, 500);">Fermer</div>
+        <div class="container">
+            <a href="{{ path('homepage') }}" {% if active_page == "homepage" %}class="active"{% endif %}>Accueil</a>
+            <a href="{{ path('about') }}" {% if active_page == "about" %}class="active"{% endif %}>À propos</a>
+            <a href="{{ path('realisations') }}" {% if active_page == "realisations" %}class="active"{% endif %}>Réalisations</a>
+            <a href="{{ path('contact') }}" {% if active_page == "contact" %}class="active"{% endif %}>Contact</a>
+        </div>
+    </div>
     <header>
+        <div class="hamburger" onclick="$('#open-mobile').addClass('opened')">
+            Menu
+        </div>
         <nav>
             <a href="{{ path('homepage') }}" {% if active_page == "homepage" %}class="active"{% endif %}>Accueil</a>
             <a href="{{ path('about') }}" {% if active_page == "about" %}class="active"{% endif %}>À propos</a>
