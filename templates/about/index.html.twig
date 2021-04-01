@@ -88,16 +88,25 @@
             return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
         }
 
-        $(window).scroll(function () {
-            if (isScrolledIntoView($('#listskills'))) {
-                animateLine('photoshop', .85, '#31A8FF');
-                animateLine('illustrator', .94, '#FF9A00');
-                animateLine('indesign', .78, '#FF3366');
-                animateLine('premiere', .65, '#9999FF');
-                animateLine('powerpoint', .97, '#D24726');
-                animateLine('social', .9, '#46C725');
-            }
-        });
+        if (window.matchMedia("(max-width: 1000px)").matches) {
+            animateLine('photoshop', .85, '#31A8FF');
+            animateLine('illustrator', .94, '#FF9A00');
+            animateLine('indesign', .78, '#FF3366');
+            animateLine('premiere', .65, '#9999FF');
+            animateLine('powerpoint', .97, '#D24726');
+            animateLine('social', .9, '#46C725');
+        } else {
+            $(window).scroll(function () {
+                if (isScrolledIntoView($('#listskills'))) {
+                    animateLine('photoshop', .85, '#31A8FF');
+                    animateLine('illustrator', .94, '#FF9A00');
+                    animateLine('indesign', .78, '#FF3366');
+                    animateLine('premiere', .65, '#9999FF');
+                    animateLine('powerpoint', .97, '#D24726');
+                    animateLine('social', .9, '#46C725');
+                }
+            });
+        }
 
         function animateLine(selector, level, color) {
             var line = new ProgressBar.Line('#' + selector + 'Line', {
