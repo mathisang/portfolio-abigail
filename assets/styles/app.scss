@@ -287,6 +287,11 @@ body {
     }
 
     @media screen and (max-width: 1000px) {
+	#open-mobile {
+		 a.active {
+			 color: $orange;
+		 }
+	 }
         header {
             height: 4rem;
             display: flex;
