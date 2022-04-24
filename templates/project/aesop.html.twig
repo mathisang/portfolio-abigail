@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+    <section class="detail-project noBg">
+        <div class="bloc-section">
+            <div class="informations">
+                <div class="top-bar">
+                    <a href="{{ path('realisations') }}"><img src="{{ asset('images/icon/back.png') }}" alt="">Retourner
+                        aux
+                        projets</a>
+                </div>
+                <h2>Aesop</h2>
+                <span class="etiquette">Projet 360</span>
+                <div class="date">
+                    <p class="title">DATE</p>
+                    <span>Mars 2020</span>
+                </div>
+                <div class="content">
+                    <p>Avec l'aide de mon groupe de travail, j'ai réalisé un projet de communication 360 pour la marque
+                        australienne Aésop. Nous avions pour objectif de mettre en avant le lancement d'un nouveau
+                        produit ou d'un produit existant de la marque. Nous avons alors choisi de lancer un système
+                        d'abonnement à une box découverte éphémère. Pour ce travail, nous avons pu analyser l'annonceur
+                        et son activité, définir des objectifs de campagne ainsi que des cibles. Par ailleurs, nous
+                        avons établi la stratégie des moyens à mettre en place pour ce lancement ainsi que le budget
+                        aloué pour enfin terminer par l'articulation de la campagne dans le temps.</p>
+
+                    <div class="list-outils">
+                        <div>
+                            <p><span class="surligne">Outil utilisé :</span></p>
+                            <ul>
+                                <li>Adobe Illustrator</li>
+                                <li>Powerpoint</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><span class="surligne">Compétences exploitées :</span></p>
+                            <ul>
+                                <li>Gestion d'un outil de PAO</li>
+                                <li>Gestion de la communication 360</li>
+                                <li>Benchmark</li>
+                                <li>Recherche typographique</li>
+                                <li>Mise en place d'objectifs et de cibles</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><span class="surligne">Notions acquises:</span></p>
+                            <ul>
+                                <li>Reflexion</li>
+                                <li>Recherche</li>
+                                <li>Travail en groupe</li>
+                                <li>Meilleure maîtrise des logiciels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-pictures">
+                <div class="picture">
+                    <img src="{{ asset('images/projects/aesop/aesop1.jpg') }}" alt="">
+                </div>
+                <div class="picture">
+                    <img src="{{ asset('images/projects/aesop/aesop2.jpg') }}" alt="">
+                </div>
+                <div class="picture">
+                    <img src="{{ asset('images/projects/aesop/aesop3.jpg') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

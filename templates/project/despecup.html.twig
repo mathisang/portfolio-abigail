@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+    <section class="detail-project noBg">
+        <div class="bloc-section">
+            <div class="informations">
+                <div class="top-bar">
+                    <a href="{{ path('realisations') }}"><img src="{{ asset('images/icon/back.png') }}" alt="">Retourner
+                        aux
+                        projets</a>
+                </div>
+                <h2>Despecup</h2>
+                <span class="etiquette">Événementiel</span>
+                <div class="date">
+                    <p class="title">DATE</p>
+                    <span>Février 2021</span>
+                </div>
+                <div class="content">
+                    <p>J'ai réalisé un événement pour la marque de bière Desperaros, en collaboration avec mon groupe de
+                        classe. Dans le cadre de ce projet, nous avons réfléchis à la mise en place d'olympiades pour
+                        une divers d'influenceurs.
+                        Le but était ici de faire connaître et aimer la marque tout en s'assurant de l'importance de la
+                        marque aux yeux de sa cible principale. Nous avons donc élaboré une stratégie complète pour cet
+                        événement. </p>
+                    <div class="list-outils">
+                        <div>
+                            <p><span class="surligne">Outil utilisé :</span></p>
+                            <ul>
+                                <li>Canva</li>
+                                <li>Adobe Illustrator</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><span class="surligne">Compétences exploitées :</span></p>
+                            <ul>
+                                <li>Gestion de projet événementiel</li>
+                                <li>Gestion d'une stratégie</li>
+                                <li>Analyse de marque</li>
+                                <li>Définition d'objectifs</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><span class="surligne">Notions acquises:</span></p>
+                            <ul>
+                                <li>Travail de groupe</li>
+                                <li>Recherche</li>
+                                <li>Créativité</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-pictures">
+                <div class="picture big-picture">
+                    <img src="{{ asset('images/projects/despecup/despecup.jpg') }}" alt="">
+                </div>
+                <div class="picture ">
+                    <img src="{{ asset('images/projects/despecup/despecup_2.png') }}" alt="">
+                </div>
+                <div class="picture ">
+                    <img src="{{ asset('images/projects/despecup/despecup_3.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

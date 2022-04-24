@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+    <section class="head-contact">
+        <h2>Contact</h2>
+    </section>
+
+    {% include('flash.html.twig') %}
+
+    <section class="contact-box noBg">
+        <div class="contact-form">
+            <h3>Une question, un projet ?</h3>
+            <p>N’hésitez pas à me contacter, je vous répondrai dès que possible</p>
+            {{ form_start(form) }}
+            <div class="input-box">
+                <label for="contact_nom">Nom : <span>*</span></label>
+                {{ form_widget(form.nom) }}
+            </div>
+            <div class="input-box">
+                <label for="contact_nom">Email : <span>*</span></label>
+                {{ form_widget(form.email) }}
+            </div>
+            <div class="input-box">
+                <label for="contact_nom">Objet : <span>*</span></label>
+                {{ form_widget(form.object) }}
+            </div>
+            <div class="input-box">
+                <label for="contact_nom">Message : <span>*</span></label>
+                {{ form_widget(form.message) }}
+            </div>
+            <div class="input-box">
+                <label for="contact_nom">Pour vérifier que vous êtes bien humain, répondez à la question suivante :<br>
+                    <b>Combien font <span class="verification"></span> ?</b> <span>*</span></label>
+                <input type="text" required name="captcha">
+            </div>
+            <input type="hidden" name="correctCaptcha" value="">
+            <button class="btn btn-orange">{{ button|default('Envoyer') }}</button>
+            {{ form_end(form) }}
+        </div>
+    </section>
+
+    <script>
+        function randomN() {
+            return Math.floor(Math.random() * 10);
+        }
+
+        let number1 = randomN();
+        let number2 = randomN();
+
+        document.querySelector('.verification').innerText = number1 + "+" + number2;
+        document.querySelector("input[name='correctCaptcha']").value = number1 + number2;
+    </script>
+{% endblock %}

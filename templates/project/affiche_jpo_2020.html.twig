@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+    <section class="detail-project noBg">
+        <div class="bloc-section">
+            <div class="informations">
+                <div class="top-bar">
+                    <a href="{{ path('realisations') }}"><img src="{{ asset('images/icon/back.png') }}" alt="">Retourner
+                        aux
+                        projets</a>
+                </div>
+                <h2>JPO 2020</h2>
+                <span class="etiquette">Affiche</span>
+                <div class="date">
+                    <p class="title">DATE</p>
+                    <span>Mars 2020</span>
+                </div>
+                <div class="content">
+                    <p>J'ai réalisé une affiche en binôme dans le cadre des journées portes ouvertes MMI 2020 à
+                        Blois.</p>
+                    <div class="list-outils">
+                    <div>
+                            <p><span class="surligne">Outil utilisé :</span></p>
+                            <ul>
+                                <li>Adobe Illustrator</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><span class="surligne">Compétences exploitées :</span></p>
+                            <ul>
+                                <li>Gestion d'un outil de PAO</li>
+                                <li>Gestion de la colorimétrie</li>
+                                <li>Benchmark</li>
+                                <li>Recherche typographique</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><span class="surligne">Notions acquises:</span></p>
+                            <ul>
+                                <li>Reflexion</li>
+                                <li>Recherche</li>
+                                <li>Travail en binôme</li>
+                                <li>Meilleure maîtrise des logiciels</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-pictures">
+                <div class="picture big-picture">
+                    <img src="{{ asset('images/projects/jpo2020/affiche_jpo.jpg') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

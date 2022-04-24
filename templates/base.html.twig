@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Abigail Potee - {% block title %}{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+    <div id="open-mobile">
+        <div id="close" onclick="$('#open-mobile').addClass('closed');setTimeout(function(){ $('#open-mobile').removeClass('opened');$('#open-mobile').removeClass('closed'); }, 500);">Fermer</div>
+        <div class="container">
+            <a href="{{ path('homepage') }}" {% if active_page == "homepage" %}class="active"{% endif %}>Accueil</a>
+            <a href="{{ path('about') }}" {% if active_page == "about" %}class="active"{% endif %}>À propos</a>
+            <a href="{{ path('realisations') }}" {% if active_page == "realisations" %}class="active"{% endif %}>Réalisations</a>
+            <a href="{{ path('contact') }}" {% if active_page == "contact" %}class="active"{% endif %}>Contact</a>
+        </div>
+    </div>
+    <header>
+        <div class="hamburger" onclick="$('#open-mobile').addClass('opened')">
+            Menu
+        </div>
+        <nav>
+            <a href="{{ path('homepage') }}" {% if active_page == "homepage" %}class="active"{% endif %}>Accueil</a>
+            <a href="{{ path('about') }}" {% if active_page == "about" %}class="active"{% endif %}>À propos</a>
+            <img src="{{ asset('images/logo.png') }}" alt="">
+            <a href="{{ path('realisations') }}" {% if active_page == "realisations" %}class="active"{% endif %}>Réalisations</a>
+            <a href="{{ path('contact') }}" {% if active_page == "contact" %}class="active"{% endif %}>Contact</a>
+        </nav>
+    </header>
+        {% block body %}{% endblock %}
+    <footer>
+        <svg id="bigHalfCircle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 100" fill="#F9F4EC" preserveAspectRatio="none">
+            <path d="M0 100 C40 0 60 0 100 100 Z" />
+            <div class="foot">
+                <div class="navigation left">
+                    <h3>Navigation</h3>
+                    <a href="{{ path('about') }}">À propos</a>
+                    <a href="{{ path('realisations') }}">Réalisations</a>
+                    <a href="{{ path('contact') }}">Contact</a>
+                </div>
+                <div class="logo">
+                    <img src="{{ asset('images/logo.png') }}" alt="">
+                </div>
+                <div class="navigation right">
+                    <h3>Rejoignez-moi</h3>
+                    <a href="https://www.instagram.com/abigailpotee" target="_blank">Instagram</a>
+                    <a href="https://www.linkedin.com/in/abigail-potee-32408417b/" target="_blank">Linkedin</a>
+                    <a href="https://www.malt.fr/profile/abigailpotee" target="_blank">Malt</a>
+                </div>
+            </div>
+        </svg>
+    </footer>
+    </body>
+</html>

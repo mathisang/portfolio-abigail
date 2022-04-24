@@ -1,0 +1,23 @@
+{% for message in app.flashes('error') %}
+    <div class="alert alert-error">
+        <div class="content-alert">
+            <p>{{ message }}</p>
+            <div class="btn btn-red" onclick="closeContact()">Réessayer</div>
+        </div>
+    </div>
+{% endfor %}
+
+{% for message in app.flashes('success') %}
+    <div class="alert alert-success">
+        <div class="content-alert">
+            <p>{{ message }}</p>
+            <div class="btn btn-orange" onclick="closeContact()">D'accord</div>
+        </div>
+    </div>
+{% endfor %}
+
+<script>
+    function closeContact() {
+        document.querySelector('.alert').style.display = "none";
+    }
+</script>

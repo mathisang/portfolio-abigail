@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+    <section class="detail-project noBg">
+        <div class="bloc-section">
+            <div class="informations">
+                <div class="top-bar">
+                    <a href="{{ path('realisations') }}"><img src="{{ asset('images/icon/back.png') }}" alt="">Retourner
+                        aux
+                        projets</a>
+                </div>
+                <h2>{{ project.title }}</h2>
+                <span class="etiquette">{{ project.theme }}</span>
+                <div class="date">
+                    <p class="title">DATE</p>
+                    <span>{{ project.dateProject|format_datetime(locale='fr',pattern="MMMM YYYY")|capitalize }}</span>
+                </div>
+
+                <div class="content">
+                    {{ project.description|raw }}
+
+                    {% if project.outils|length > 0 and project.competences|length > 0 and project.notions|length > 0 %}
+                    <div class="list-outils">
+                        {% if project.outils|length > 0 %}
+                        <div>
+                            <p><span class="surligne">Outil utilisé :</span></p>
+                            <ul>
+                                {% for outil in project.outils %}
+                                    <li>{{ outil|capitalize }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endif %}
+
+                        {% if project.competences|length > 0 %}
+                        <div>
+                            <p><span class="surligne">Compétences exploitées :</span></p>
+                            <ul>
+                                {% for competence in project.competences %}
+                                    <li>{{ competence|capitalize }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endif %}
+
+                        {% if project.notions|length > 0 %}
+                        <div>
+                            <p><span class="surligne">Notions acquises:</span></p>
+                            <ul>
+                                {% for notion in project.notions %}
+                                    <li>{{ notion|capitalize }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                </div>
+
+                <div class="list-pictures">{{ project.content|raw }}</div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

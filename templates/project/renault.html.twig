@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+    <section class="detail-project noBg">
+        <div class="bloc-section">
+            <div class="informations">
+                <div class="top-bar">
+                    <a href="{{ path('realisations') }}"><img src="{{ asset('images/icon/back.png') }}" alt="">Retourner
+                        aux
+                        projets</a>
+                </div>
+                <h2>Renault</h2>
+                <span class="etiquette">Brand content</span>
+                <div class="date">
+                    <p class="title">DATE</p>
+                    <span>Mars 2020</span>
+                </div>
+                <div class="content">
+                    <p>En collaboration avec 4 de mes camarades de classe, nous avons réalisé un projet de stratégie de
+                        contenu sur la gamme hybride de Renault. Pour ce projet, nous avons analysé les contenus déjà
+                        existants, les formes d'expression de la marque ainsi que son ADN et ses piliers éditoriaux.
+                        Ensuite, nous avons fait une étude des audiences stratégique et du marché de l'automobile
+                        hybride et électrique. Enfin, nous avons procédé à une recommandation d'optimisation des
+                        contenus de la marque et de ses canaux de diffusion. </p>
+                    <div class="list-outils">
+                        <div>
+                            <p><span class="surligne">Outil utilisé :</span></p>
+                            <ul>
+                                <li>Canva</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><span class="surligne">Compétences exploitées :</span></p>
+                            <ul>
+                                <li>Benchmark</li>
+                                <li>Audit</li>
+                                <li>Réalisation de différents personna</li>
+                                <li>Réalisation d'un mapping et d'une cartographie</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><span class="surligne">Notions acquises:</span></p>
+                            <ul>
+                                <li>Reflexion</li>
+                                <li>Recherche</li>
+                                <li>Travail en groupe</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-pictures">
+                <div class="picture">
+                    <img src="{{ asset('images/projects/renault/renault2.jpg') }}" alt="">
+                </div>
+                <div class="picture">
+                    <img src="{{ asset('images/projects/renault/renault2.jpg') }}" alt="">
+                </div>
+                <div class="picture">
+                    <img src="{{ asset('images/projects/renault/renlaut3.jpg') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

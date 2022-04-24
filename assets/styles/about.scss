@@ -1,0 +1,69 @@
+body {
+  .about {
+    max-width: 1000px;
+    padding-top: 40px;
+
+    .portrait {
+      height: 150px;
+      width: 150px;
+      //background: url("http://abigailpotee.fr/images/portrait.jpeg");
+      background: url("http://abigailpotee.fr/images/portrait.jpeg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 100%;
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      margin-top: 6px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .list-soft {
+    h4 {
+      margin: 2rem 0 0 !important;
+    }
+
+    article {
+      margin: .75rem 4rem;
+    }
+  }
+
+  .list-hard {
+    background: none !important;
+
+    img {
+      width: auto !important;
+      height: 47px !important;
+      margin-bottom: 2.5rem;
+    }
+
+    article {
+      width: 150px !important;
+      margin: .75rem 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    .about {
+      padding: 40px 1rem 80px;
+    }
+    .list-soft {
+      article {
+        margin: 1.25rem 4rem;
+      }
+    }
+    .list-hard  {
+      article {
+        max-width: 150px !important;
+        margin: 1.25rem 2.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+    <style>
+        .progress {
+            height: 6px;
+            background: #dbdbdb;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress > svg {
+            height: 100%;
+            display: block;
+        }
+    </style>
+    <script src="script/progressbar.js"></script>
+    <section class="about noBg">
+        <div class="portrait"></div>
+        <h2>Abigail Potee</h2>
+        <h3>Qui je suis ?</h3>
+        <p>Si vous êtes arrivé jusqu’ici c’est que vous chercher à en savoir plus sur moi.<br>
+            Je m’appelle Abigail POTEE, j’ai 20 ans et je suis diplomée d’un bachelor en Communication Marketing &
+            Événementiel.<br> J’ai effectué mes deux dernières années en alternance et ce fut une expérience plus
+            qu’enrichissante. J’aime
+            le challenge et le renouveau, c’est pourquoi <span class="surligne">je recherche activement une entreprise qui saura m’accueillir
+                pour l’année 2021-2022.</span></p>
+    </section>
+
+    <section class="soft-skills list-soft">
+        <article>
+            <img src="{{ asset('images/icon/quill.svg') }}" alt="">
+            <h4>Créativité</h4>
+        </article>
+        <article>
+            <img src="{{ asset('images/icon/layers.svg') }}" alt="">
+            <h4>Polyvalence</h4>
+        </article>
+        <article>
+            <img src="{{ asset('images/icon/chat.svg') }}" alt="">
+            <h4>Communication</h4>
+        </article>
+        <article>
+            <img src="{{ asset('images/icon/passion.svg') }}" alt="">
+            <h4>Passion</h4>
+        </article>
+        <article>
+            <img src="{{ asset('images/icon/team.svg') }}" alt="">
+            <h4>Esprit d'équipe</h4>
+        </article>
+    </section>
+
+    <section class="soft-skills list-hard" id="listskills">
+        <article>
+            <img src="{{ asset('images/icon/photoshop.svg') }}" alt="">
+            <div class="progress" id="photoshopLine"></div>
+        </article>
+        <article>
+            <img src="{{ asset('images/icon/illustrator.svg') }}" alt="">
+            <div class="progress" id="illustratorLine"></div>
+        </article>
+        <article>
+            <img src="{{ asset('images/icon/indesign.svg') }}" alt="">
+            <div class="progress" id="indesignLine"></div>
+        </article>
+        <article>
+            <img src="{{ asset('images/icon/premiere.svg') }}" alt="">
+            <div class="progress" id="premiereLine"></div>
+        </article>
+        <article>
+            <img src="{{ asset('images/icon/powerpoint.svg') }}" alt="">
+            <div class="progress" id="powerpointLine"></div>
+        </article>
+        <article>
+            <img src="{{ asset('images/icon/social.svg') }}" alt="">
+            <div class="progress" id="socialLine"></div>
+        </article>
+    </section>
+    <script>
+        function isScrolledIntoView(elem) {
+            var docViewTop = $(window).scrollTop();
+            var docViewBottom = docViewTop + $(window).height();
+            var elemTop = $(elem).offset().top;
+            var elemBottom = elemTop + $(elem).height();
+            return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom) && (elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+        }
+
+        if (window.matchMedia("(max-width: 1000px)").matches) {
+            animateLine('photoshop', .85, '#31A8FF');
+            animateLine('illustrator', .94, '#FF9A00');
+            animateLine('indesign', .78, '#FF3366');
+            animateLine('premiere', .65, '#9999FF');
+            animateLine('powerpoint', .97, '#D24726');
+            animateLine('social', .9, '#46C725');
+        } else {
+            $(window).scroll(function () {
+                if (isScrolledIntoView($('#listskills'))) {
+                    animateLine('photoshop', .85, '#31A8FF');
+                    animateLine('illustrator', .94, '#FF9A00');
+                    animateLine('indesign', .78, '#FF3366');
+                    animateLine('premiere', .65, '#9999FF');
+                    animateLine('powerpoint', .97, '#D24726');
+                    animateLine('social', .9, '#46C725');
+                }
+            });
+        }
+
+        function animateLine(selector, level, color) {
+            var line = new ProgressBar.Line('#' + selector + 'Line', {
+                color: color,
+                duration: 3000,
+                easing: 'easeInOut'
+            });
+
+            line.animate(level);
+        }
+    </script>
+{% endblock %}
